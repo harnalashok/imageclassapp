@@ -32,11 +32,13 @@ st.text("Upload an image from one of six classes")
 size = (1, 64, 64, 3)
 img_classes =  ['buildings', 'forest', 'glacier', 'mountain', 'sea', 'street']
 
+model = keras.models.load_model('/app/intel_images_model.h5')
+
 #2.0 Our predict function:
 def predict(img, model_file, size):
     # 2.1 Load the model
-    model = keras.models.load_model(model_file)
-
+    #model = keras.models.load_model(model_file)
+    model = model_file
     # 2.2 Create the array of the right shape to feed into the keras model
     data = np.ndarray(shape=size, dtype=np.float32)
     image = img
@@ -72,7 +74,7 @@ if uploaded_file is not None:
     st.write("Classifying...")
     label = predict(
                     image,
-                    'intel_images_model.h5',
+                    model,
                      size
                     )
 
