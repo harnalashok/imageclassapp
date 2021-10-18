@@ -1,3 +1,4 @@
+pyyaml==3.13
 h5py==3.1.0
 streamlit==1.0.0
 numpy==1.19.5
