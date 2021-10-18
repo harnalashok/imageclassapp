@@ -2,5 +2,5 @@ streamlit==1.0.0
 numpy==1.19.5
 pandas==1.2.4
 tensorflow==2.6.0
-PIL==8.2.0
+Pillow==8.2.0
 matplotlib==3.3.4
