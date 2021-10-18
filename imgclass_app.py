@@ -72,7 +72,7 @@ if uploaded_file is not None:
     st.write("Classifying...")
     label = predict(
                     image,
-                    'intel_images_model.h5',
+                    'my_model',
                      size
                     )
 
