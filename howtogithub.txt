@@ -1,0 +1,40 @@
+# Last amended: 17th Oct, 2021
+# Ref:  https://git-lfs.github.com/
+#
+###  How to save large files to github repo
+#
+
+0. Create on github an image classification repo,
+   by name of 'image_classification_app'
+
+1. Put necessary files there. But you may not
+   be able to upload the CNN model because
+   of very large size.
+
+2. On your laptop, clone image_classification_app
+   repo using Github Desktop.
+
+3. On your laptop, download and install 
+   Git Large File Storage software from here:
+	https://git-lfs.github.com/
+
+4. cd to folder:
+	D:\data\OneDrive\Documents\streamlit\image_classification_app
+
+5. Issue command:
+
+	git lfs install
+
+6. Then issue command:
+
+	git lfs track "*.h5"
+
+7. Then, next, issue command:
+	
+	git add .gitattributes
+
+8. Now copy your h5 file to this folder
+   and Push it to orgin using GitHub Desktop
+   as you normally do.
+
+######################################

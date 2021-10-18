@@ -1,0 +1,23 @@
+# Last amended: 18th Oct, 2021
+# My folder: /home/ashok/Documents/image_classification_app
+#
+# About needed files:
+
+1. App file:
+	imgclass_app.py
+		It is a python file
+2. Model file:
+	intel_images_model.h5
+		Model prepared by a python or .ipynb file
+3. setup.sh:
+	How to setup heroku
+	Dictated by Heroku
+
+4. requirements.txt:
+	What software is needed by the application
+
+4. Procfile:
+	Which shell commands to run in Heroku 
+	and in which in order
+######################
+ 		
