@@ -32,7 +32,7 @@ st.text("Upload an image from one of six classes")
 size = (1, 64, 64, 3)
 img_classes =  ['buildings', 'forest', 'glacier', 'mountain', 'sea', 'street']
 
-model = keras.models.load_model('./intel_images_model.h5')
+model = keras.models.load_model('intel_images_model.h5')
 
 #2.0 Our predict function:
 def predict(img, model_file, size):
