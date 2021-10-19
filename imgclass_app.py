@@ -1,6 +1,9 @@
-# Last amended: 17th October, 2021
+# Last amended: 19th October, 2021
 # streamlit file to classify images
+#
 # Ref: https://www.pluralsight.com/guides/deploying-image-classification-on-the-web-with-streamlit-and-heroku
+#      streamlit:  https://docs.streamlit.io/library/api-reference
+#
 #  Objectives:
 #            a. Build a simple CNN model for image classfication
 #            b. Save the model, host it on github and use it for
@@ -10,7 +13,7 @@
 #               on github under deeplearning repo.
 #            d. Images are stored on gdrive under:
 #                  ..Colab_data_files/intel_images
-#            e. And saved model (.h5 file) under:
+#            e. And saved model (a saved_model/my_model folder) under:
 #                 ..Colab_data_files/intelmodel
 
 
@@ -26,6 +29,7 @@ import streamlit as st
 # 1.1 Initial titles
 st.title("Image Classification of Intel Images")
 st.header("Classify image into six classes")
+st.subheader("Author: Ashok K Harnal") 
 st.text("Upload an image from one of six classes")
 
 # 1.2 Constants to be decided, case by case
